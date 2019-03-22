@@ -1,17 +1,17 @@
 class StaticPagesController < ApplicationController
 	@@images = [
-  		"https://cdn.studyinternational.com/news/wp-content/uploads/2017/05/Dwight-3.jpg",
-  		"https://www.dwightschooldubai.ae/sites/default/files/styles/generic_page_image_size/public/2018-03/Classroom%207.jpg?itok=xrxymDgZ"  	
+  		"https://thejournal.com/articles/2012/11/06/~/media/EDU/THEJournal/Images/2012/11/20121101deanza570%202.ashx",
+  		"https://cdn.iste.org/www-root/2018-09/img_id_587.png?RRltQvsST3OMVPp9yg42F95vU0Xl722e"  	
   	]
 
   	@@images2 = [
-  	"https://www.dwight.edu/data/news/thumbs/737.large.jpg",
-	"https://www.dwight.edu/uploaded/photos/PROGRAMS/INNOVATION/Pg10-dwt_17_247.jpg"  	
+  	"https://static01.nyt.com/images/2012/10/22/education/22schools_2/22schools_2-jumbo.jpg",
+	  "https://c8.alamy.com/comp/C96J44/two-teenage-secondary-school-girls-playing-electronic-digital-keyboards-C96J44.jpg"  	
 	]
 
   	@@images3 =[
-  	"https://www.dwight.edu/uploaded/GLOBAL/Programs/Peer_tutoring/Tutoring_-_Resized.jpg",
-  	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNhe3vJnoKlsDquFwi2m6Bd__hPf8WpJDE17cmAYV9huRSoNg"
+  	"https://i2.cdn.turner.com/cnn/dam/assets/120120071257-p-tech-story-top.jpg",
+  	"https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/ModuleInstance/32196/large/banner_0008_Calebparkerphotography-_Y7A0349.jpg"
   	]
   def home
   	@random = @@images.sample
