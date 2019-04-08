@@ -1,5 +1,6 @@
 class DppostsController < ApplicationController
   before_action :set_dppost, only: [:show, :edit, :update, :destroy]
+  # if a user is not signed in, they will not be able to create new content
   before_action :authorize, :only => [:create] 
   # GET /dpposts
   # GET /dpposts.json
@@ -68,9 +69,13 @@ class DppostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dppost_params
+      # everything that is passed in inside a param, therefore everything that a 
+      # logged in admin can do to create new content
       params.require(:dppost).permit(:title, :body, :file, images: [])
     end
 
+    # method for if user is not signed in and tries to create a new post, they will be 
+    # redirected to a sign in page
     def authorize
     redirect_to new_session_path, alert: 'Please Sign In or Sign Up!' if current_user.nil?
     end

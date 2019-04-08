@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  #resources create a selection of routes for dpposts, 
+  #highschoolposts, sessions, users, and posts
   resources :dpposts
   resources :highschoolposts
   # get 'sessions/new'

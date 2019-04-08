@@ -14,6 +14,8 @@ class StaticPagesController < ApplicationController
   	"https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/ModuleInstance/32196/large/banner_0008_Calebparkerphotography-_Y7A0349.jpg"
   	]
   def home
+    # method for randomizing the images that can be seen on the homepage
+    # every time the homepage is refreshed
   	@random = @@images.sample
   	@random2 = @@images2.sample
   	@random3 = @@images3.sample
